@@ -1,6 +1,40 @@
 <h3>Math Functions</h3>
-Exercise: Using the function in the main article as a model, write a function that will multiply two numbers together. Call the function and pass in several different combination of numbers (i.e. <code>#addNumbers(5,3)# &lt;br/> #addNumbers(100,223)# </code> etc.)
+Exercise: Using the function in the main article as a model, write a function that will multiply two numbers together. Call the function and pass in several different combination of numbers (i.e. <code>#addNumbers(5,3)# &lt;br/> #addNumbers(100,223)# </code> etc.) <br><br>
 
+<bx:output>
+  12 x 2 = <b>#multiply(12,2)#</b><br>
+  100 x 1 = <b>#multiply(100,1)#</b><br>
+  81.6 x 9.5 = <b>#multiply(81.6,9.5)#</b>
+</bx:output>
 
 <hr />
-Exercise: Can you make a form that accepts two numbers, submits it to the same page and then uses the function to add the two numbers together? All the information you need is in these docs.
+Exercise: Can you make a form that accepts two numbers, submits it to the same page and then uses the function to add the two numbers together? All the information you need is in these docs.<br><br>
+
+<bx:output>
+
+    <form action="#cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#" method="post">
+
+        <p>
+            <label for="numone">First number: </label>
+            <input type="number" id="numone" name="numone" value="0">
+        </p>
+        <p>
+            <label for="numtwo">Second number: </label>
+            <input type="number" id="numtwo" name="numtwo" value="0">
+        </p>
+
+        <p>
+            <input type="submit" value="Multiply">
+        </p>
+
+    </form>
+
+    Result: <b>#multiply(numone,numtwo)#</b>
+
+</bx:output>
+
+<bx:function name="multiply" access="private" returntype="numeric">
+  <bx:argument name="firstnum" type="numeric">
+  <bx:argument name="secondnum" type="numeric">
+  <bx:return #firstnum*secondnum#>
+</bx:function>
