@@ -1,0 +1,38 @@
+<h3>My Form</h3>
+<p>Use HTML to create a form which submits to the same page. Make your form with 5 inputs that coincide with the  properties in your database. On the page include <code>&lt;bx:dump var="#form#" label="The Form Data" /></code> so you can test the submission of the form.</p>
+
+<bx:output>
+
+    <form action="#cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#" method="post">
+
+        <legend>Books:</legend>
+
+        <p>
+            <input type="checkbox" id="dazai" name="dazai">
+            <label for="dazai">Osamu Dazai, <i>No Longer Human</i></label>
+        </p>
+        <p>
+            <input type="checkbox" id="greene" name="greene">
+            <label for="greene">Joanne Greene, <i>Natural Watercolor Paint Making</i></label>
+        </p>
+        <p>
+            <input type="checkbox" id="martin" name="martin">
+            <label for="martin">Molly Martin, <i>The Art of Repair</i></label>
+        </p>
+        <p>
+            <input type="checkbox" id="schwartz" name="schwartz">
+            <label for="schwartz">Alvin Schwartz, <i>Scary Stories to Tell in the Dark</i></label>
+        </p>
+        <p>
+            <input type="checkbox" id="shelley" name="shelley">
+            <label for="shelley">Mary Shelley, <i>Frankenstein</i></label>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+
+    </form>
+
+    <bx:dump var="#form#" label="The Form Data" />
+
+</bx:output>

@@ -1,0 +1,90 @@
+<p><strong>Exercise:</strong>Make an ordered list ( using the ol and li tags ). For each item, output a math problem using each operator least once and two numbers between 1 and 9 ( i.e. 1+9=????? ).</p>
+
+<ol>
+
+    <li>
+        6 + 6 = 
+        <bx:output >
+            #6+6#
+        </bx:output>
+    </li>
+    <li>
+        10 - 9 = 
+        <bx:output >
+            #9-8#
+        </bx:output>
+    </li>
+    <li>
+        8 x 8 = 
+        <bx:output >
+            #8*8#
+        </bx:output>
+    </li>
+    <li>
+        9 / 3 = 
+        <bx:output >
+            #9/3#
+        </bx:output>
+    </li>
+    <li>
+        5^2 = 
+        <bx:output >
+            #5^2#
+        </bx:output>
+    </li>
+    <li>
+        Remainder of 11 / 2 = 
+        <bx:output >
+            #7%2#
+        </bx:output>
+    </li>
+    <li>
+        9 / 2 to the nearest integer = 
+        <bx:output >
+            #9\2#
+        </bx:output>
+    </li>
+    <li>
+        Range from 1-5 = (Code is #1..5# but trying to parse it as a string produces an error)
+    </li>
+    <li>
+        Range from 1-5 excluding start value = (Code is #1>..5#)
+    </li>
+    <li>
+        Range from 1-5 excluding end value = (Code is #1..<5#)
+    </li>
+    <li>
+        Range from 1-5 excluding start and end values = (Code is #1>..<5#)
+    </li>
+    <li>
+        6 + 1 (by increment) = 
+        <bx:output>
+            #++6#
+        </bx:output>
+    </li>
+    <li>
+        2 - 1 (by decrement) = 
+        <bx:output >
+            #--2#
+        </bx:output>
+    </li>
+    <li>
+        8 negated = 
+        <bx:output >
+            #-8#
+        </bx:output>
+    </li>
+    <li>
+        4 positive = 
+        <bx:output >
+            #+4#
+        </bx:output>
+    </li>
+    <li>
+        8 / (7 - 5) = 
+        <bx:output >
+            #8/(7-5)#
+        </bx:output>
+    </li>
+
+</ol>
