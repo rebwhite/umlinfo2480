@@ -1,0 +1,5 @@
+<bx:DBInfo type="tables"
+name="yourinfo"
+datasource="Rebecca_White"
+ />
+ <bx:dump var="#yourinfo#" />

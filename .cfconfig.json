@@ -19,7 +19,7 @@
                 }
             },
             "datasources" : {
-                "**DSOURCENAME**":{
+                "Rebecca_White":{
                     "database":"${PDBNAME}",
                     "dbdriver":"mysql",
                     "host":"${PHOST}",
